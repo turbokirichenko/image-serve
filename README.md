@@ -56,7 +56,7 @@ $ echo -n 'https://avatars.githubusercontent.com/u/92226824?v=4' | base64
 
 ```bash
 $ curl -v -X GET "http://localhost:8082/image/aHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzkyMjI2ODI0P3Y9NA==?w
-=200&ext=avif" --output ./avatar.avif
+=200&ext=jpg" --output ./avatar.jpg
 Note: Unnecessary use of -X or --request, GET is already inferred.
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -81,7 +81,7 @@ Note: Unnecessary use of -X or --request, GET is already inferred.
 ```
 
 <b>Result:</b>
-![result image](https://github.com/turbokirichenko/image-serve/avatar.avif)
+![result image](https://github.com/turbokirichenko/image-serve/blob/main/avatar.jpg)
 
 ## Mime Types
 
@@ -111,7 +111,7 @@ mime_types = {
 
 <b>You will get this image if the service returns an error:</b>
 
-![error image](https://github.com/turbokirichenko/image-serve/www/static/400.jpg)
+![error image](https://github.com/turbokirichenko/image-serve/blob/main/www/static/400.jpg)
 
 <br />
 <b>To change default error image, just replace it from www/static/400.jpg</b>
